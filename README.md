@@ -3,6 +3,12 @@
 
 ---
 
+# Application Demonstration
+![first-note](https://user-images.githubusercontent.com/33831343/72204722-c286bb00-34c6-11ea-9665-8618f3b3b40b.gif)
+![second-note](https://user-images.githubusercontent.com/33831343/72204741-f8c43a80-34c6-11ea-859d-6b647be1745e.gif)
+
+---
+
 ## Basic application composition (ide, dependencies and configuration etc)
 
 - Xcode 10.1 (10B61)
@@ -72,6 +78,8 @@
          }
          
 4. Key files that reference the Firebase Database object.
+- ViewController.swift
+- ComposerViewController.swift
 
 ## Firebase Database (Public Authentication)
 
