@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>804327911085-79rdet7pmrctir0326t0166q4hivtti1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.804327911085-79rdet7pmrctir0326t0166q4hivtti1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDvxIlEROWcQL8vAJtwACGXY-AgNjLW4zo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>804327911085</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>au.com.bonganimkonto.notes</string>
+	<key>PROJECT_ID</key>
+	<string>notesapp-42a6f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>notesapp-42a6f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:804327911085:ios:96d2691586e6a8e35a6024</string>
+	<key>DATABASE_URL</key>
+	<string>https://notesapp-42a6f.firebaseio.com</string>
+</dict>
+</plist>
