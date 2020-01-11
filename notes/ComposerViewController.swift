@@ -29,12 +29,13 @@ class ComposerViewController: UIViewController {
         
         // POST data to Firebase
         createPost()
-        // Dismiss popover
+        // Dismiss modal view
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     // button deletes post
     @IBAction func trash(_ sender: Any) {
+        // Dismiss modal view
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
