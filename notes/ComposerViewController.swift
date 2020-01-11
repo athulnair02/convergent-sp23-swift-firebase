@@ -40,7 +40,7 @@ class ComposerViewController: UIViewController {
     
     private func createPost(){
         // create collection called Notes
-        ref?.child("Notes").childByAutoId().setValue(textView.text)
+        ref?.child(Config.FIREBASE_COLLECTION).childByAutoId().setValue(textView.text)
     }
     
     /*

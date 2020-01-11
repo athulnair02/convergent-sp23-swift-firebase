@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ref = Database.database().reference()
         
         // retrieve collection posts and listen for changes
-        databaseHandle = ref?.child("Notes").observe(.childAdded, with: { (snapshot) in
+        databaseHandle = ref?.child(Config.FIREBASE_COLLECTION).observe(.childAdded, with: { (snapshot) in
             
             // Code to execute when a child node is added to Notes collection
             // take snapshot value and add to postData array
