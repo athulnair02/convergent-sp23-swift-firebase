@@ -49,16 +49,41 @@
   ## XCode (Code Structure, Storyboard Configs)
   1. Import Firebase module into your app.
    - Open the AppDelegate.swift file and import the Firebase module.
-       import Firebase
+             import Firebase
    - Initialise the Firebase object|instance in the AppDelegate application method
-       func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+       
+           func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
              FirebaseApp.configure()
              
              return true
-       }
+           }
 
-    
+2. Add a Navigation controller and a second View controller UI components in the Main.storyboard file.
+3. Create a prototype cell in your Table View 
+   - Give your table cell view a reference id (this will be invoked in the tableView method in the ViewController class file)
+   ![prototype cell](https://user-images.githubusercontent.com/33831343/72204031-52286b80-34bf-11ea-91d0-fff469b65338.png)
+   
+         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell")
+                cell?.textLabel?.text = postData[indexPath.row]
+   
+                return cell!
+         }
+         
+4. Key files that reference the Firebase Database object.
 
+## Firebase Database (Public Authentication)
+
+By default the Firebase database required authentication.   
+- To get the Firebase database URL, click the GoogleService-info.plist file from your project list and copy the string value from the key **DATABASE_URL**
+- Paste that into your browser and log into the Firebase console.
+- Navigate to Database > Rules and change the read and write values to true
+![realtime db config](https://user-images.githubusercontent.com/33831343/72204219-3de56e00-34c1-11ea-98bb-62592cdf0199.png)
+
+
+---
+
+Happy Coding! This app is a simple app. In future I will add some CRUD enhancements, push notification when a new note is created, launch screen and other bells and whistles.
 
 
