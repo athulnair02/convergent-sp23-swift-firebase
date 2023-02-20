@@ -83,9 +83,9 @@
 
 ## Firebase Database (Public Authentication)
 
+Create a Relatime Database and copy the database URL seen into a new key-value pair in GoogleService-info.plist with the key as DATABASE_URL.
+
 By default the Firebase database required authentication.   
-- To get the Firebase database URL, click the GoogleService-info.plist file from your project list and copy the string value from the key **DATABASE_URL**
-- Paste that into your browser and log into the Firebase console.
 - Navigate to Database > Rules and change the read and write values to true
 ![realtime db config](https://user-images.githubusercontent.com/33831343/72204219-3de56e00-34c1-11ea-98bb-62592cdf0199.png)
 
